@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Replayer",
+  "version": "1.0",
+
+  "description": "Agrega un borde rojo a todas las páginas web de mozilla.org.",
+
+  "icons": {
+    "48": "icons/replay-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["replayer.js"]
+    }
+  ]
+}
